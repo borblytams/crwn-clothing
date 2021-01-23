@@ -3,7 +3,8 @@ import { Switch, Route , Link} from "react-router-dom";
 
 import './App.css';
 import HomePage from "./pages/homepage/homepage.component";
-import ShopPage from "./pages/shop/shop.component"
+import ShopPage from "./pages/shop/shop.component";
+import Header from "./components/header/header.component";
 
 
 
@@ -13,6 +14,7 @@ const TopicDetail = () => {
   return (
     <div>
     return (
+      
       <div>
         <Link to="/topics"></Link>
         <h1>HOME PAGE</h1>
@@ -27,6 +29,7 @@ const TopicDetail = () => {
 
 function App() {
   return <div>
+      <Header />
       <Switch>
          <Route exact path="/shop" component={ShopPage} />
        
